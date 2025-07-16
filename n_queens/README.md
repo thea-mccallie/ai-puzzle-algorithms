@@ -10,15 +10,6 @@ It includes:
 
 ---
 
-## 📁 Project Structure
-
-n_queens/
-├── n_queens.py # Core logic and solver functions
-├── test_n_queens.py # Unit tests for validation and correctness
-└── README.md # Documentation (this file)
-
----
-
 ### 🔁 Running the Solver
 
 python test_n_queens.py
@@ -45,11 +36,11 @@ Returns all valid N-Queens solutions in a list (helper built on top of the gener
 
  ## 🧪 Sample Output
 
- >>> list(n_queens_solutions(4))
+```list(n_queens_solutions(4))```
 [[1, 3, 0, 2], [2, 0, 3, 1]]
 
->>> n_queens_valid([1, 3, 0, 2])
+```n_queens_valid([1, 3, 0, 2])```
 True
 
->>> num_placements_all(3)
+```num_placements_all(3)```
 84
