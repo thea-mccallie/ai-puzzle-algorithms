@@ -1,4 +1,4 @@
-# 🧠 N-Queens Solver
+# N-Queens Solver
 
 This project provides a Python implementation of a solver for the classic **N-Queens problem**, where `n` queens must be placed on an `n × n` chessboard so that no two queens threaten each other.
 
@@ -10,13 +10,13 @@ It includes:
 
 ---
 
-### 🔁 Running the Solver
+### Running the Solver
 
 python test_n_queens.py
 
 ---
 
-## 📚 Included Functions
+## Included Functions
 ```num_placements_all(n)```
 Returns the number of ways to place n identical queens on an n x n board with no restrictions.
 
@@ -34,7 +34,7 @@ Returns all valid N-Queens solutions in a list (helper built on top of the gener
 
 ---
 
- ## 🧪 Sample Output
+ ## Sample Output
 
 ```list(n_queens_solutions(4))```
 [[1, 3, 0, 2], [2, 0, 3, 1]]
