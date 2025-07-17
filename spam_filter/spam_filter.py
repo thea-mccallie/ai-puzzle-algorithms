@@ -11,6 +11,7 @@ determined by each document class, then using a naive Bayes model to make predic
 
 def load_tokens(email_path):
     """Extract tokens (words) from an email file"""
+    # Time complexity: O(n)
     with open(email_path, "r") as f:
         message = email.message_from_file(f)
         tokens = []
@@ -20,6 +21,8 @@ def load_tokens(email_path):
         
 def log_probs(email_paths, smoothing):
     """Calculate log probabilities of tokens from a list of emails with smoothing"""
+    # Time complexity: O(n)
+
     tokens = []
     for path in email_paths:
         tokens += load_tokens(path)
@@ -41,6 +44,7 @@ class SpamFilter(object):
         Train the spam filter using directories of spam and ham emails
         Builds word probability dictionaries and computes prior class probabilities
         """
+        # Time complexity: O(n)
 
         self.smoothing = smoothing
 
@@ -62,6 +66,8 @@ class SpamFilter(object):
         Classify an email as spam or ham based on learned probabilities
         Uses Naive Bayes to compute log-likelihoods and compares them
         """
+        # Time complexity: O(n)
+
         tokens = load_tokens(email_path)
         token_counts = Counter(tokens)
 
@@ -82,6 +88,8 @@ class SpamFilter(object):
         Return the n words most indicative of spam
         Computes indication using log(P(w|spam) / P(w))
         """
+        # Time compexity: O(v log n)
+        # v is the size of the vocabulary
          
         indicative = {}
         for word in self.spam_p_dict:
@@ -97,6 +105,9 @@ class SpamFilter(object):
         Return the n words most indicative of ham
         Computes indication using log(P(w|ham) / P(w))
         """
+        # Time compexity: O(v log n)
+        # v is the size of the vocabulary
+        
         indicative = {}
         for word in self.ham_p_dict:
             if word in self.spam_p_dict:
