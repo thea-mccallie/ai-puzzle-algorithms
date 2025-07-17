@@ -1,4 +1,4 @@
-# 📨 Naive Bayes Spam Filter
+# Naive Bayes Spam Filter
 
 This project provides a Python implementation of a **Naive Bayes classifier** for detecting spam emails based on word probabilities learned from labeled training data.
 
@@ -10,7 +10,7 @@ It includes:
 
 ---
 
-### 🔁 Running the Classifier
+### Running the Classifier
 
 1. Place your labeled training emails in the following structure:
 data/training_data/spam/ spam1, spam2, spam_n
@@ -24,7 +24,7 @@ python test_spam_filter.py
 
 ---
 
-## 📚 Included Components
+## Included Components
 
 ```load_tokens(email_path)```
 Reads an email and returns a list of all tokens (words) in the body.
@@ -46,7 +46,7 @@ Returns the top n words most strongly associated with ham (non-spam).
 
 ---
 
-## 🧪 Sample Output
+## Sample Output
 
 ```filter = SpamFilter("training_data/spam", "training_data/ham", smoothing=1.0)```
 ```filter.is_spam("test_emails/test1")```  ➜ True or False
