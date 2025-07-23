@@ -8,7 +8,7 @@ This project provides a Python implementation of a solver for the classic **N-Qu
 
 ## Spam Filter
 
-A minimal system for spam filtering made by processing the raw training data, estimating the conditional probability distributions of the words in the vocabulary determined by each document class, then using a naive Bayes model to make predictions on the test set.
+A system for spam filtering made by processing the raw training data, estimating the conditional probability distributions of the words in the vocabulary determined by each document class, then using a naive Bayes model to make predictions on the test set.
 
 ## Tile Puzzle Solver
 
